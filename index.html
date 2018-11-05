@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=0.3333333333333333, maximum-scale=0.3333333333333333, minimum-scale=0.3333333333333333, user-scalable=no">
+	<title></title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.js"></script>
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			width: 100%;
+			position: relative;
+		}
+		.menu{
+			width: 100%;
+			border-top: 1px solid #ebebeb;
+			margin: 0px auto;
+			display: flex;
+			z-index: 99;
+			font-size: 36px;
+			background: pink;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+		}
+		.tab-logn{
+			width: 25%;
+			text-align: center;
+			line-height: 60px;
+			list-style: none;
+		}
+		.tab-logn a{
+			display: inline-block;
+			height: auto;
+			text-decoration: none;
+			color: #999;
+			cursor: pointer;
+		}
+		.tab-home{
+			display: block;
+			width: 100px;
+			height: 100px;
+		}
+		.tab-home img{
+			width: 100%;
+			height: 100%;
+		}
+		.content{
+			width: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	</style>
+	
+	
+</head>
+<body ng-app="app">
+	<div class="box">
+		<div class="footBox">
+			<ul class="menu">
+				<li class="tab-logn">
+					<a href="#/">
+						<i class="tab-home"><img src="http://127.0.0.1/web01/mankz/img/ic_tab_home_no.png"></i>
+						首页
+					</a>
+				</li>
+				<li class="tab-logn">
+					<a href="#/sort">
+						<i class="tab-home"><img src="http://127.0.0.1/web01/mankz/img/ic_tab_class_no (1).png"></i>
+						分类
+					</a>
+				</li>
+				<li class="tab-logn">
+					<a href="#/bookBox">
+						<i class="tab-home"><img src="http://127.0.0.1/web01/mankz/img/ic_tab_book_no.png"></i>
+						书架
+					</a>
+				</li>
+				<li class="tab-logn">
+					<a href="#/mine">
+						<i class="tab-home"><img src="http://127.0.0.1/web01/mankz/img/ic_tab_me_no.png"></i>
+						我的
+					</a>
+				</li>
+			</ul>
+			<div class="content" ng-view></div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+	var app=angular.module("app",["ngRoute"]);
+	
+	app.config(["$routeProvider",function($routeProvider){
+		$routeProvider
+		.when("/",{templateUrl:"html/home.html"})
+		.when("/sort",{templateUrl:"html/sort.html"})
+		.when("/bookBox",{templateUrl:"html/bookBox.html"})
+		.when("/mine",{templateUrl:"html/mine.html"})
+		.otherwise({redirctTo:"/"})
+	}])
+</script>
+</html>

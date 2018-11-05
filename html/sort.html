@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=0.3333333333333333, maximum-scale=0.3333333333333333, minimum-scale=0.3333333333333333, user-scalable=no">
+	<title></title>
+	<script src="../js/angular.min.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			list-style: none;
+		}
+		.heard{
+			width: 100%;
+			position: fixed;
+		    top: 0;
+		    border-bottom: 1px solid #ebebeb;
+		    text-align: center;
+		    font-size: 45px;
+		    background: #fff;
+		    z-index: 99;
+		}
+		.clearfix{
+			width: 55%;
+			float: left;
+			line-height: 120px;
+			display: flex;
+			justify-content: space-around;
+		}
+		.nav-item{
+			list-style: none;
+		}
+		.clearfix li.active{
+			color: #ff7830;
+		}
+		.underline{
+			width: 5%;
+		    height: 10px;
+		    position: absolute;
+		    bottom: 0;
+		    left: 8%;
+		    background: #ff7830;
+		    border-radius: 30px;
+		}
+		.nav-search{
+			float: right;
+		    color: #ff7830;
+		    margin-top: 27px;
+		    margin-right: 40px;
+		}
+		.nav-search img{
+			width: 77px;
+		   	height: 77px;
+		}
+		.table{
+			margin-top: 132px;
+			display: flex;
+			flex-wrap: wrap; 
+			justify-content: space-between;
+		}
+		.catalog-item{
+			box-sizing: border-box;
+			list-style: none;
+		    float: left;
+		    width: 33.33%;
+		    padding: 30px;
+		    text-align: center;
+		    font-size: 45px;
+		    border-right: 1px solid #ddd;
+		    border-bottom: 1px solid #ddd;
+		}
+		.catalog-item a{
+			color: black;
+			text-decoration: none;
+		}
+		.catalog-item a p{
+			padding: 11px 0;
+		}
+		.catalog-item a img{
+			width: 100%;
+			height: 75%;
+		}
+	</style>
+</head>
+<body>
+	<!-- 顶部导航 -->
+	<div class="heard">
+		<ul class="clearfix">
+			<li class="nav-item active">题材</li>
+			<li class="nav-item">进度</li>
+			<li class="nav-item">受众</li>
+			<li class="nav-item">属性</li>
+		</ul>
+		<span class="underline"></span>
+		<a href="" class="search"><i class="nav-search"><img src="img/nav-seacher.png"></i></a>
+	</div>
+	<div class="content">
+		<ul class="table">
+			<li class="catalog-item">
+				<a href="">
+					<p>霸总</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/01.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>修真</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/02.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>恋爱</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/03.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>校园</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/04.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>冒险</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/05.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>搞笑</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/06.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>生活</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/07.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>热血</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/08.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>架空</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/09.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>后宫</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/010.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>耽美</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/011.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>玄幻</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/012.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>悬疑</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/013.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>恐怖</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/014.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>异灵</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/015.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>动作</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/016.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>科幻</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/018.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>战争</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/019.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>古风</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/017.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>穿越</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/020.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>竞技</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/021.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>百合</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/022.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>励志</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/023.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>同人</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/024.png">
+				</a>
+			</li>
+			<li class="catalog-item">
+				<a href="">
+					<p>真人</p>
+					<img src="http://127.0.0.1/web01/mankz/img/img2/025.png">
+				</a>
+			</li>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript">
+	
+</script>
+</html>

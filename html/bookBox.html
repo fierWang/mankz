@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=0.3333333333333333, maximum-scale=0.3333333333333333, minimum-scale=0.3333333333333333, user-scalable=no">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			list-style: none;
+		}
+		.heard{
+			width: 100%;
+			position: fixed;
+		    top: 0;
+		    border-bottom: 1px solid #ebebeb;
+		    text-align: center;
+		    font-size: 45px;
+		    background: #fff;
+		    z-index: 99;
+		}
+		.clearfix{
+			width: 55%;
+			float: left;
+			line-height: 120px;
+		}
+		.nav-item{
+			width: 50%;
+			float: left;
+			list-style: none;
+		}
+		.clearfix li.active{
+			color: #ff7830;
+		}
+		.underline{
+			width: 5%;
+		    height: 10px;
+		    position: absolute;
+		    bottom: 0;
+		    left: 11%;
+		    background: #ff7830;
+		    border-radius: 30px;
+		}
+		.clean-up{
+			line-height: 120px;
+			float: right;
+			margin-right: 5%;
+		}
+		.clean-up i{
+			display: inline-block;
+			width: 50px;
+			height: 45px;
+		}
+		.clean-up i img{
+			width: 100%;
+			height: 100%;
+		}
+		.no-login-h{
+			width: 100%;
+			color: #999;
+			background: rgb(248, 248, 248);
+			font-size: 40px;
+			margin-top: 132px;
+		}
+		.logn{
+			margin-left: 5%;
+			line-height: 125px;
+		}
+		.no-login-h a{
+			color: #999;
+			display: inline-block;
+			width: 190px;
+			height: 75px;
+			line-height: 75px;
+			float: right;
+			margin-right: 5%;
+			margin-top: 2%;
+			border: 1px solid #999;
+			border-radius: 45px;
+			text-align: center;
+		}
+		.addBook{
+			text-align: center;
+			font-size: 45px;
+			line-height: 70px;
+		}
+		.history{
+			width: 100%;
+			height: 50%;
+		}
+		.history img{
+			margin-top: 10%;
+			width: 45%;
+		}	
+		.txt2{
+			font-size: 40px;
+			color: #b4b4b4;
+		}
+		.Recommend{
+			margin-left: 5%;
+		}
+		.title{
+			font-size: 40px;
+			color: #666;
+			line-height: 110px;
+		}
+		.Recommend-list{
+			flex-wrap: wrap;
+			display: flex;
+			justify-content: space-between;
+		}
+		.Recommend-list li{
+			width: 32%;
+			list-style: none;
+		}
+		.Recommend-list li img{
+			width: 100%;
+			height: 85%;
+		}
+		.Recommend-list li p{
+			width: 100%;
+			padding-top: 20px;
+			font-size: 43px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="heard">
+		<ul class="clearfix">
+			<li class="nav-item active">历史</li>
+			<li class="nav-item">收藏</li>
+		</ul>
+		<span class="underline"></span>
+		<div class="clean-up">
+			<i><img src="http://127.0.0.1/web01/mankz/img/book-logn.png"></i>
+			<span>整理</span>
+		</div>
+	</div>
+	<div class="no-login-h">
+		<div>
+			<span class="logn">登录后可同步阅读历史</span>
+			<a href="" >登录</a>
+		</div>
+	</div>
+	<div class="addBook">
+		<div class="history">
+			<img src="http://127.0.0.1/web01/mankz/img/pic_history_null.png">
+		</div>
+		<p class="txt1">主人还没阅读任何漫画咯~</p>
+		<p class="txt2">赶快去追一部漫画吧～</p>
+	</div>
+	<div class="Recommend">
+		<h2 class="title">相关推荐</h2>
+		<ul class="Recommend-list">
+			<li>
+				<a href=""><img src="https://oss.mkzcdn.com/comic/cover/20180412/5acebcc67f6f0-600x800.!width-200"></a>
+				<p>斗破苍穹</p>
+			</li>
+			<li>
+				<a href=""><img src="https://oss.mkzcdn.com/comic/cover/20180817/5b76248a0e889-600x800.jpg!width-200"></a>
+				<p>斗罗大陆2绝世唐门</p>
+			</li>
+			<li>
+				<a href=""><img src="https://oss.mkzcdn.com/comic/cover/20170608/5938fdf5c54e5-600x800.jpg!width-200"></a>
+				<p>妖神记</p>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
